@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DataGridXamarin"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="DataGridXamarin.MainPage">
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Behaviors>
+        <local:PageBehavior/>
+    </ContentPage.Behaviors>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button Text="Export_As_PDF" x:Name="exportAsPDF" />
+                <sfgrid:SfDataGrid x:Name="sfGrid" 
+                       ColumnSizer="Star"
+                       HeightRequest="500"    
+                       AutoGenerateColumns="True"                         
+                       ItemsSource="{Binding OrdersInfo}" >
+                </sfgrid:SfDataGrid>
+
+                <sfgrid:SfDataGrid x:Name="sfGrid1" 
+                       ColumnSizer="Star"                           
+                       AutoGenerateColumns="True"                         
+                       ItemsSource="{Binding OrdersInfo1}" >
+                </sfgrid:SfDataGrid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
