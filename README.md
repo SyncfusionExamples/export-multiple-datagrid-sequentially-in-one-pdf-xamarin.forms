@@ -1,2 +1,1 @@
-# export-multiple-datagrid-sequentially-in-one-pdf-xamarin.forms
-How to export multiple SfDataGrids sequentially to one PDF document in Xamarin.Forms DataGrid (SfDataGrid) ?
+**[View document in Syncfusion Xamarin.Forms Knowledge Base](https://www.syncfusion.com/kb/13747/how-to-export-multiple-sfdatagrids-sequentially-to-one-pdf-document-in-xamarin-forms)**
